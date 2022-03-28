@@ -1,0 +1,74 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  background-color: #eee;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.git {
+  height: 15rem;
+  width: 15rem;
+  border-radius: 1.5rem;
+  background-color: #f05033;
+  position: relative;
+  transform: rotate(45deg);
+}
+
+.line {
+  position: absolute;
+  background-color: white;
+  height: 1.2rem;
+}
+
+.line--1 {
+  width: 11rem;
+  top: 4rem;
+}
+
+.line--2 {
+  width: 8rem;
+  top: 7rem;
+  left: 3rem;
+  transform: rotate(45deg);
+}
+
+.line--1::before,
+.line--1::after,
+.line--2::before {
+  content: "";
+  width: 3rem;
+  height: 3rem;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: -0.8rem;
+}
+
+.line--1::after {
+  left: 9rem;
+}
+
+.line--2::before {
+  left: 7rem;
+}
+
+.line--1::before {
+  left: 3rem;
+}

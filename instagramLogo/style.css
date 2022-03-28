@@ -1,0 +1,69 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #eee;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 20rem;
+  width: 20rem;
+  background-image: radial-gradient(
+    circle at 30% 107%,
+    #fdf497 5%,
+    #fd5949 45%,
+    #d6249f 60%,
+    #285aeb 90%
+  );
+  border-radius: 6rem;
+}
+
+.square {
+  height: 16rem;
+  width: 16rem;
+  border: 1rem solid white;
+  border-radius: 4.5rem;
+  position: relative;
+}
+
+.logo,
+.square,
+.circle--1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle--1 {
+  height: 8rem;
+  width: 8rem;
+  border: 1rem solid white;
+  border-radius: 50%;
+}
+
+.circle--2 {
+  height: 1.5rem;
+  width: 1.5rem;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+}

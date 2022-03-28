@@ -1,0 +1,117 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-image: linear-gradient(60deg, #303030, #000);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  height: 13rem;
+  width: 23rem;
+  border-radius: 50%;
+  background-color: #fdff00;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.bat {
+  position: relative;
+  width: 21.2rem;
+  height: 11.2rem;
+  border-radius: inherit;
+  background-color: #000;
+}
+
+.oval,
+.sq,
+.ears {
+  background-color: #fdff00;
+  position: absolute;
+  top: 0;
+}
+
+.oval {
+  border-radius: 50%;
+  width: 3.3rem;
+  height: 7rem;
+}
+
+.oval--1 {
+  top: 6.7rem;
+  left: 4.4rem;
+  transform: rotate(-41deg);
+}
+.oval--2 {
+  top: 6.7rem;
+  right: 4.4rem;
+  transform: rotate(41deg);
+}
+.oval--3 {
+  top: 7.3rem;
+  left: 7.3rem;
+  transform: rotate(-15deg);
+}
+.oval--4 {
+  top: 7.3rem;
+  right: 7.3rem;
+  transform: rotate(15deg);
+}
+
+.oval--5,
+.oval--6 {
+  width: 3.7rem;
+  height: 4rem;
+}
+
+.oval--5 {
+  top: 0;
+  left: 5.5rem;
+}
+
+.oval--6 {
+  top: 0;
+  right: 5.5rem;
+}
+
+.sq {
+  width: 2rem;
+  height: 2rem;
+}
+
+.sq--1 {
+  left: 7.2rem;
+}
+
+.sq--2 {
+  right: 7.2rem;
+}
+
+.ears {
+  width: 2.6rem;
+  border-style: solid;
+  border-width: 0 0.6rem 1.2rem 0.6rem;
+  border-color: transparent #000 #fdff00 #000;
+
+  left: 50%;
+  transform: translate(-50%) rotate(180deg);
+}

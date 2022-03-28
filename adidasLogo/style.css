@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.adidas {
+  width: 20.6rem;
+  height: 12rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.shape {
+  width: 4.6rem;
+  height: 15rem;
+  background-color: #111;
+  position: absolute;
+  transform: rotate(-31deg);
+}
+
+.shape--1 {
+  top: 8.6rem;
+  left: 3.6rem;
+}
+.shape--2 {
+  top: 4.5rem;
+  left: 8.2rem;
+}
+.shape--3 {
+  top: 0.4rem;
+  left: 12.9rem;
+}

@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #002b82;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle {
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.circle--1 {
+  width: 26rem;
+  height: 26rem;
+  background-color: #ff4040;
+}
+
+.circle--2 {
+  width: 21rem;
+  height: 21rem;
+  background-color: white;
+}
+
+.circle--3 {
+  width: 15rem;
+  height: 15rem;
+  background-color: #ff4040;
+}
+
+.circle--4 {
+  width: 10rem;
+  height: 10rem;
+  background-color: #306fd4;
+  position: relative;
+}
+
+.arrow {
+  position: absolute;
+  border: 4.8rem solid transparent;
+  border-top: 3.5rem solid white;
+}
+
+.arrow--top {
+  top: 3.5rem;
+}
+
+.arrow--left {
+  top: 1.6rem;
+  left: -2.4rem;
+  transform: rotate(72deg);
+}
+
+.arrow--right {
+  top: 1.6rem;
+  left: 2.4rem;
+  transform: rotate(-72deg);
+}

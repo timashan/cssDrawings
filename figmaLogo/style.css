@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #333;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 18rem;
+  height: 27rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.part {
+  width: 9rem;
+  height: 9rem;
+}
+
+.part--1 {
+  background-color: #ee4e2a;
+  border-radius: 50% 0 0 50%;
+}
+.part--2 {
+  background-color: #fb7266;
+  border-radius: 0 50% 50% 0;
+}
+.part--3 {
+  background-color: #a061fa;
+  border-radius: 50% 0 0 50%;
+}
+.part--4 {
+  background-color: #2ebdfa;
+  border-radius: 50%;
+}
+.part--5 {
+  background-color: #00ce84;
+  border-radius: 50% 0 50% 50%;
+}

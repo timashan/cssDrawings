@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #2da4a8;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.coffee-mug {
+  height: 15rem;
+  width: 15rem;
+  background-color: #3f2616;
+  border-radius: 50%;
+  position: relative;
+  box-shadow: 0 0 0 1rem #442918, 0 0 0 2.5rem #3c2415, 0 0 0 4.2rem #fe9407,
+    0 0 0 6.5rem #feaa3a, 0rem 12rem 0 -2.5rem #3c2415,
+    10rem 7rem 0 -2.5rem #3c2415, 8rem 14rem 0 -1rem #3c2415,
+    0rem 21rem 0 -5.5rem #3c2415, 2rem 25rem 0 -6.5rem #3c2415;
+}
+
+.coffee-mug::before {
+  height: 7.5rem;
+  width: 6rem;
+  content: "";
+  position: absolute;
+  top: -8.5rem;
+  right: -7.5rem;
+  transform: rotate(45deg);
+  background-color: #fe9407;
+  border-radius: 1rem;
+}

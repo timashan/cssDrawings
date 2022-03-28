@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-image: linear-gradient(135deg, #00a6b7, #99f5ff);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.pepsi {
+  height: 30rem;
+  width: 30rem;
+  background-color: #34588e;
+  border-radius: 50%;
+  border: 1rem solid white;
+  position: relative;
+  overflow: hidden;
+}
+
+.pepsi::before {
+  content: "";
+  height: 50rem;
+  width: 50rem;
+  background-color: white;
+  position: absolute;
+  top: -28rem;
+  left: -26rem;
+  border-radius: 25%;
+  transform: rotate(-18deg);
+}
+
+.pepsi::after {
+  content: "";
+  height: 50rem;
+  width: 50rem;
+  background-color: #da473c;
+  position: absolute;
+  top: -31rem;
+  left: -26rem;
+  border-radius: 50%;
+  transform: rotate(-18deg);
+}

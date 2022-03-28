@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #233637;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.diamond {
+  height: 20rem;
+  width: 20rem;
+  display: flex;
+  flex-wrap: wrap;
+  transform: rotate(45deg);
+}
+
+.diamond span {
+  border: 5rem solid transparent;
+  border-color: #1fb67c #20bc7d #26c893 #55ddb9;
+}
+
+.diamond span:nth-child(1) {
+  border-top-color: transparent;
+  border-left-color: transparent;
+}

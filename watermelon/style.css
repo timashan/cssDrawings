@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #69506d;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.watermelon {
+  width: 34rem;
+  height: 18rem;
+  background-color: #fd6c64;
+  border: 2rem solid #5af5b6;
+  border-top: 0;
+  border-radius: 0 0 20rem 20rem;
+}
+
+span {
+  display: inline-block;
+  height: 1rem;
+  width: 1rem;
+  background-color: black;
+  border-radius: 50%;
+  margin: 2rem;
+}
+
+span:nth-child(7),
+span:nth-child(12),
+span:nth-child(13),
+span:nth-child(14) {
+  visibility: hidden;
+}
