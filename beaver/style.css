@@ -1,0 +1,286 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  background-color: #f0efed;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.frame {
+  width: 37rem;
+  height: 44rem;
+  border: 2rem solid white;
+  background-color: #f0d0d1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  position: relative;
+}
+
+.body {
+  height: 90%;
+  width: 70%;
+  background-color: #a35a37;
+  border-radius: 50% 50% 0 0;
+  position: relative;
+}
+
+.heart {
+  height: 8.5rem;
+  width: 8.5rem;
+  background-color: #f0d0d1;
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg);
+}
+
+.heart::before,
+.heart::after,
+.bow::before,
+.lashes::before,
+.lashes::after,
+.muzzle::before,
+.whiskers-left::before,
+.whiskers-left::after,
+.whiskers-right::before,
+.whiskers-right::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.heart::before,
+.heart::after {
+  background-color: inherit;
+  top: 0;
+  left: 0;
+  border-radius: 50%;
+}
+
+.heart::before {
+  transform: translateY(-50%);
+}
+.heart::after {
+  transform: translateX(-50%);
+}
+
+.arm-left {
+  position: absolute;
+  width: 45%;
+  height: 20%;
+  bottom: 10%;
+  background-color: #7a3b1a;
+  border-radius: 0 5rem 5rem 0;
+  transform: skewY(10deg);
+}
+
+.arm-right {
+  position: absolute;
+  width: 45%;
+  height: 20%;
+  bottom: 10%;
+  right: 0;
+  background-color: #7a3b1a;
+  border-radius: 5rem 0 0 5rem;
+  transform: skewY(-10deg);
+}
+
+.bow {
+  height: 2.5rem;
+  width: 3rem;
+  background-color: #f0d0d1;
+  position: absolute;
+  top: 8%;
+  right: 25%;
+  border-radius: 50% 5px 5px 50%;
+  transform: rotate(10deg);
+}
+
+.bow::before {
+  border-radius: 5px 50% 50% 5px;
+  background-color: inherit;
+  transform: translateX(-100%);
+}
+
+.eye-left,
+.eye-right {
+  height: 1.5rem;
+  width: 3rem;
+  border: 0.3rem solid #3c2114;
+  border-top: 0;
+  border-radius: 0 0 10rem 10rem;
+  top: 35%;
+  position: absolute;
+}
+
+.eye-left {
+  left: 32%;
+}
+
+.eye-right {
+  right: 32%;
+}
+
+.lashes {
+  width: 0.2rem;
+  height: 0.8rem;
+  background-color: #3c2114;
+  position: absolute;
+  left: 50%;
+  bottom: -0.8rem;
+  transform: translateX(-50%);
+}
+
+.lashes::before,
+.lashes::after {
+  background-color: inherit;
+  transform-origin: top;
+  top: -0.2rem;
+}
+
+.lashes::before {
+  left: -1rem;
+  transform: rotate(30deg);
+}
+.lashes::after {
+  right: -1rem;
+  transform: rotate(-30deg);
+}
+
+.muzzle {
+  width: 8.7rem;
+  height: 5.5rem;
+  background-color: #ffd49d;
+  position: absolute;
+  top: 45%;
+  left: 27%;
+  border-radius: 5rem 0 0 5rem;
+  transform: rotate(-10deg);
+}
+
+.muzzle::before {
+  background-color: inherit;
+  top: 0;
+  left: 100%;
+  transform-origin: top left;
+  border-radius: 0 5rem 5rem 0;
+  transform: rotate(20deg);
+}
+
+.nose {
+  width: 5.6rem;
+  height: 4.2rem;
+  position: absolute;
+  background-color: #3c2114;
+  top: 42%;
+  left: 50%;
+  transform: translate(-50%);
+  border-radius: 100% 100% 50% 50%;
+}
+
+.teeth {
+  width: 4.4rem;
+  height: 4rem;
+  background-color: white;
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-radius: 0.5rem;
+}
+
+.teeth::after {
+  content: "";
+  height: 100%;
+  width: 2px;
+  position: absolute;
+  background-color: #a35a37;
+  left: 50%;
+  transform: translate(-50%);
+}
+
+.whiskers-left,
+.whiskers-right {
+  width: 10.5rem;
+  height: 2px;
+  position: absolute;
+  top: 48%;
+  background-color: #7a3b1a;
+}
+
+.whiskers-left {
+  left: 8%;
+  transform: rotate(10deg);
+}
+
+.whiskers-left::before {
+  background-color: inherit;
+  top: 1.5rem;
+  left: 0.2rem;
+  transform: rotate(-10deg);
+}
+
+.whiskers-left::after {
+  background-color: inherit;
+  top: 3rem;
+  left: 0.4rem;
+  transform: rotate(-20deg);
+}
+
+.whiskers-right {
+  right: 8%;
+  transform: rotate(-10deg);
+}
+
+.whiskers-right::before {
+  background-color: inherit;
+  top: 1.5rem;
+  right: 0.2rem;
+  transform: rotate(10deg);
+}
+
+.whiskers-right::after {
+  background-color: inherit;
+  top: 3rem;
+  right: 0.4rem;
+  transform: rotate(20deg);
+}
+
+.ear-left,
+.ear-right {
+  height: 6rem;
+  width: 6rem;
+  background-color: #f0a77e;
+  border: 0.8rem solid #a35a37;
+  position: absolute;
+  top: 15%;
+  border-radius: 50%;
+}
+
+.ear-left {
+  left: 16%;
+  transform: rotate(-45deg);
+}
+
+.ear-right {
+  right: 16%;
+  transform: rotate(45deg);
+}
